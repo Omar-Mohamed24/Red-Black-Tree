@@ -19,7 +19,6 @@ This repository contains an implementation of the Red-Black Tree, where I've str
 ### Key Features:
 - **Insertion**: Automatically adjusts the tree after each insertion to preserve balance.
 - **Deletion**: Ensures that the Red-Black properties remain intact after removing a node.
-- **Search**: Efficiently retrieves elements in **O(log n)** time.
 - **Balancing**: Rotations and recoloring operations ensure that the tree remains balanced.
 
-You can explore the source code in this repository for a deeper understanding of how Red-Black Trees work and how the balancing mechanisms (rotations and recoloring) are implemented in practice.
+You can explore the source code in this repository for a deeper understanding of how Red-Black Trees work and how the balancing mechanisms.
