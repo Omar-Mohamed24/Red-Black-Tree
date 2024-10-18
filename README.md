@@ -1,13 +1,25 @@
-# Red-Black-Tree
-  A Red-Black Tree (RBT) is a type of self-balancing binary search tree that ensures operations like insertion, deletion, and lookups are performed efficiently in       O(log n) time. It's widely used in computer science for maintaining sorted data in dynamic sets. The key idea behind a Red-Black Tree is that it imposes additional    properties on the standard binary search tree, which helps to keep the tree balanced.
+# Red-Black Tree
 
-##Key Properties of Red-Black Trees:
-  1.Every node is either red or black.
-  2.The root of the tree is always black.
-  3.All leaves (NULL pointers) are considered black.
-  4.If a node is red, both of its children must be black (no two consecutive red nodes on a path).
-  5.Every path from a node to its descendant leaves has the same number of black nodes.
+A **Red-Black Tree (RBT)** is a self-balancing binary search tree that ensures operations like insertion, deletion, and lookups are performed efficiently in **O(log n)** time. This tree is widely used in computer science for maintaining sorted data within dynamic sets. By imposing additional properties on the standard binary search tree, a Red-Black Tree maintains balance, which optimizes its performance.
 
-  These properties guarantee that the longest path from the root to any leaf is no more than twice as long as the shortest path, ensuring the tree remains balanced.    This balance allows efficient insertion, deletion, and search operations.
+## Key Properties of Red-Black Trees
 
-In my implementation, I've adhered to the standard Red-Black Tree properties, focusing on efficient balancing during insertions and deletions to maintain the logarithmic time complexity. You can explore the code in this repository for a deeper understanding of how Red-Black Trees function in practice.
+1. **Node Color**: Each node is either **red** or **black**.
+2. **Root Property**: The root node is always **black**.
+3. **Leaf Nodes**: All leaves (represented by `NULL` pointers) are considered **black**.
+4. **Red-Red Conflict**: If a node is **red**, both of its children must be **black** (i.e., no two consecutive red nodes on any path).
+5. **Black Height**: Every path from a node to its descendant leaves must have the same number of **black** nodes.
+
+These properties ensure that the longest path from the root to any leaf is no more than twice the length of the shortest path, keeping the tree balanced and ensuring logarithmic time complexity for critical operations like insertion, deletion, and search.
+
+## Implementation
+
+This repository contains an implementation of the Red-Black Tree, where I've strictly adhered to its balancing rules. Special attention is given to maintaining logarithmic time complexity, especially during insertion and deletion operations.
+
+### Key Features:
+- **Insertion**: Automatically adjusts the tree after each insertion to preserve balance.
+- **Deletion**: Ensures that the Red-Black properties remain intact after removing a node.
+- **Search**: Efficiently retrieves elements in **O(log n)** time.
+- **Balancing**: Rotations and recoloring operations ensure that the tree remains balanced.
+
+You can explore the source code in this repository for a deeper understanding of how Red-Black Trees work and how the balancing mechanisms (rotations and recoloring) are implemented in practice.
