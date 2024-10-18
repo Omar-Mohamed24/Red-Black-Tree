@@ -1,2 +1,2 @@
 # Red-Black-Tree
-RDT Implementation
+  A Red-Black Tree (RBT) is a type of self-balancing binary search tree that ensures operations like insertion, deletion, and lookups are performed efficiently in       O(log n) time. It's widely used in computer science for maintaining sorted data in dynamic sets. The key idea behind a Red-Black Tree is that it imposes additional    properties on the standard binary search tree, which helps to keep the tree balanced.
